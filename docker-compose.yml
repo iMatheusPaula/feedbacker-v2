@@ -14,6 +14,22 @@ services:
     networks:
       - feedbacker_network
 
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "9501:9501"
+    environment:
+      - APP_ENV=dev
+      - SCAN_CACHEABLE=false
+    volumes:
+      - ./backend:/opt/www
+    networks:
+      - feedbacker_network
+    depends_on:
+      - db
+
 volumes:
   db:
     driver: local
