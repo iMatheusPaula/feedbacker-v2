@@ -3475,16 +3475,16 @@
         },
         {
             "name": "hyperf/validation",
-            "version": "v3.1.57",
+            "version": "v3.1.59",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/validation.git",
-                "reference": "cc5e6202d2ba0ac11f0fa4b5237f2ebe5169ef12"
+                "reference": "efcadb42314a7493850455ce34b7623ed8f35353"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/validation/zipball/cc5e6202d2ba0ac11f0fa4b5237f2ebe5169ef12",
-                "reference": "cc5e6202d2ba0ac11f0fa4b5237f2ebe5169ef12",
+                "url": "https://api.github.com/repos/hyperf/validation/zipball/efcadb42314a7493850455ce34b7623ed8f35353",
+                "reference": "efcadb42314a7493850455ce34b7623ed8f35353",
                 "shasum": ""
             },
             "require": {
@@ -3535,7 +3535,7 @@
             ],
             "support": {
                 "issues": "https://github.com/hyperf/validation/issues",
-                "source": "https://github.com/hyperf/validation/tree/v3.1.57"
+                "source": "https://github.com/hyperf/validation/tree/v3.1.59"
             },
             "funding": [
                 {
@@ -3547,7 +3547,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-06-06T02:41:30+00:00"
+            "time": "2025-06-30T03:02:24+00:00"
         },
         {
             "name": "laminas/laminas-mime",
