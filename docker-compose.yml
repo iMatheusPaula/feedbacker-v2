@@ -30,6 +30,21 @@ services:
     depends_on:
       - db
 
+  frontend:
+    build:
+      context: ./dashboard
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./dashboard:/app
+      - /app/node_modules
+    networks:
+      - feedbacker_network
+    depends_on:
+      - backend
+      - db
+
 volumes:
   db:
     driver: local
