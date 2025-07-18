@@ -19,8 +19,8 @@ async function testSanctum() {
 </script>
 <template>
   <!--  BANNER SECTION-->
-  <section class="banner-section">
-    <div class="banner-container">
+  <section class="banner-section bg-brand-main w-full flex justify-center">
+    <div class="banner-container flex flex-col w-4/5 max-w-6xl">
       <!--coluna texto e balao-->
       <div class="flex flex-col mt-28 max-w-fit">
         <h1 class="text-4xl font-black text-white">
@@ -69,11 +69,7 @@ async function testSanctum() {
 </template>
 <style lang="postcss" scoped>
 .banner-section{
-  @apply bg-brand-main w-full flex justify-center;
   height: 500px;
-}
-.banner-container{
-  @apply flex flex-col w-4/5 max-w-6xl;
 }
 @media (min-width: 640px){
   .banner-container{

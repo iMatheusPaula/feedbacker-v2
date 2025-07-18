@@ -14,8 +14,8 @@ function handleCreateAccount(){
 </script>
 <template>
   <!--coluna logo e botoes-->
-  <header class="header">
-    <div class="header-container">
+  <header class="bg-brand-main w-full flex justify-center">
+    <div class="flex flex-col w-4/5 max-w-6xl;">
       <div class="flex items-center justify-between py-10">
         <div class="w-28 lg:w-36">
           <NuxtLink to="/"><img src="/images/logo-white.png" alt="Logo" class="w-full"></NuxtLink>
@@ -57,12 +57,3 @@ function handleCreateAccount(){
     </div>
   </footer>
 </template>
-<style scoped>
-.header{
-  @apply bg-brand-main w-full flex justify-center;
-  /* height: 700px; */
-}
-.header-container{
-  @apply flex flex-col w-4/5 max-w-6xl;
-}
-</style>
