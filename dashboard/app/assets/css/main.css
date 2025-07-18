@@ -1,6 +1,124 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+    --color-brand-main: #ef4983;
+    --color-brand-gray: #f9f9f9;
+    --color-brand-info: #8296fb;
+    --color-brand-graydark: #c0bcb0;
+    --color-brand-darkgray: #444444;
+    --color-brand-warning: #e4b52e;
+    --color-brand-danger: #f88676;
+
+    --color-mediumslateblue-50: #f6f9fd;
+    --color-mediumslateblue-100: #e8f3fd;
+    --color-mediumslateblue-200: #cbdefb;
+    --color-mediumslateblue-300: #abc4fb;
+    --color-mediumslateblue-400: #8296fb;
+    --color-mediumslateblue-500: #5667fb;
+    --color-mediumslateblue-600: #3d46f7;
+    --color-mediumslateblue-700: #3137e5;
+    --color-mediumslateblue-800: #272cb9;
+    --color-mediumslateblue-900: #202591;
+
+    --color-slateblue-50: #f5f8fc;
+    --color-slateblue-100: #eaf0fc;
+    --color-slateblue-200: #d3d8fa;
+    --color-slateblue-300: #babcf9;
+    --color-slateblue-400: #9c8ff9;
+    --color-slateblue-500: #7a61f9;
+    --color-slateblue-600: #5d41f4;
+    --color-slateblue-700: #4933e1;
+    --color-slateblue-800: #382ab5;
+    --color-slateblue-900: #2d248f;
+
+    --color-mediumorchid-50: #f9f7fa;
+    --color-mediumorchid-100: #f7edf9;
+    --color-mediumorchid-200: #efd1f5;
+    --color-mediumorchid-300: #e8aef1;
+    --color-mediumorchid-400: #e47cec;
+    --color-mediumorchid-500: #e04fe7;
+    --color-mediumorchid-600: #c932d7;
+    --color-mediumorchid-700: #9a27b5;
+    --color-mediumorchid-800: #712186;
+    --color-mediumorchid-900: #571c66;
+
+    --color-deeppink-50: #fcf9f9;
+    --color-deeppink-100: #fcf0f3;
+    --color-deeppink-200: #fad3e6;
+    --color-deeppink-300: #f9acd1;
+    --color-deeppink-400: #fa73ab;
+    --color-deeppink-500: #fb4783;
+    --color-deeppink-600: #f42a5c;
+    --color-deeppink-700: #d6214a;
+    --color-deeppink-800: #a71b3a;
+    --color-deeppink-900: #83172f;
+
+    --color-tomato-50: #fcf9f6;
+    --color-tomato-100: #fcf0ed;
+    --color-tomato-200: #fadad6;
+    --color-tomato-300: #f8b9b0;
+    --color-tomato-400: #f88676;
+    --color-tomato-500: #f85b47;
+    --color-tomato-600: #ee392e;
+    --color-tomato-700: #cc2b2b;
+    --color-tomato-800: #9e2328;
+    --color-tomato-900: #7c1d23;
+
+    --color-chocolate-50: #fbf8f2;
+    --color-chocolate-100: #fbf1e1;
+    --color-chocolate-200: #f8e1bb;
+    --color-chocolate-300: #f5c782;
+    --color-chocolate-400: #f39d41;
+    --color-chocolate-500: #f1741e;
+    --color-chocolate-600: #e24f13;
+    --color-chocolate-700: #bc3b16;
+    --color-chocolate-800: #922e1a;
+    --color-chocolate-900: #732619;
+
+    --color-goldenrod-50: #fbfaf4;
+    --color-goldenrod-100: #faf6e0;
+    --color-goldenrod-200: #f5ebb0;
+    --color-goldenrod-300: #efd86f;
+    --color-goldenrod-400: #e4b52e;
+    --color-goldenrod-500: #d69111;
+    --color-goldenrod-600: #b76b0a;
+    --color-goldenrod-700: #8b500e;
+    --color-goldenrod-800: #663d12;
+    --color-goldenrod-900: #4e3012;
+
+    --color-darkgoldenrod-50: #fbfaf6;
+    --color-darkgoldenrod-100: #f9f8e7;
+    --color-darkgoldenrod-200: #f2efbc;
+    --color-darkgoldenrod-300: #e8de7f;
+    --color-darkgoldenrod-400: #d3bd3a;
+    --color-darkgoldenrod-500: #b79b17;
+    --color-darkgoldenrod-600: #8e750d;
+    --color-darkgoldenrod-700: #685910;
+    --color-darkgoldenrod-800: #4b4213;
+    --color-darkgoldenrod-900: #393414;
+
+    --color-lightseagreen-50: #f5fafa;
+    --color-lightseagreen-100: #eaf7f5;
+    --color-lightseagreen-200: #ceeee8;
+    --color-lightseagreen-300: #a7dfd9;
+    --color-lightseagreen-400: #63c3be;
+    --color-lightseagreen-500: #30a29c;
+    --color-lightseagreen-600: #237f79;
+    --color-lightseagreen-700: #236460;
+    --color-lightseagreen-800: #204c4a;
+    --color-lightseagreen-900: #1b3d3c;
+
+    --color-cornflowerblue-50: #f4fafc;
+    --color-cornflowerblue-100: #e2f7fb;
+    --color-cornflowerblue-200: #bdeaf7;
+    --color-cornflowerblue-300: #8fd8f5;
+    --color-cornflowerblue-400: #4fb6f1;
+    --color-cornflowerblue-500: #238fed;
+    --color-cornflowerblue-600: #1a6bdf;
+    --color-cornflowerblue-700: #1b54bd;
+    --color-cornflowerblue-800: #19418c;
+    --color-cornflowerblue-900: #15346b;
+}
 
 html,
 body,
