@@ -8,7 +8,6 @@ export default {
 }
 </script>
 <script setup>
-import useModal from "assets/js/useModal";
 const modal = useModal()
 
 const DEFAULT_WIDTH = 'w-3/4 lg:w-1/3'

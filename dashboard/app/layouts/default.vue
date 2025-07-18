@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import useModal from "@/assets/js/useModal";
 const modal = useModal();
 const auth = useAuthStore();
 function handleLogin(){

@@ -2,7 +2,6 @@
 definePageMeta({
   middleware: 'only-guest'
 });
-import useModal from "@/assets/js/useModal";
 const modal = useModal();
 function handleCreateAccount() {
   modal.open({

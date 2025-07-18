@@ -2,8 +2,7 @@
 import { reactive } from "vue";
 import { useField } from "vee-validate";
 import { useToast } from "vue-toastification";
-import useModal from "@/assets/js/useModal";
-import { validateEmptyAndLength, validateEmail } from "@/assets/js/validators";
+import { validateEmptyAndLength, validateEmail } from "@/utils/validators";
 
 // const`s
 const modal = useModal();
